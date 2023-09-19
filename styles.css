@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    background-color: #CDDCDC;
+    background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+    background-blend-mode: screen, overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.col-header {
+    font-size: 20px;
+    width: 150px;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    color: black;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 9px rgba(107, 107, 107, 0.36);
+}
+
+.col-header:hover {
+    border: 1px solid;
+    font-weight: 800;
+}
+.item {
+    font-weight: 800;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 70px;
+    color: rgb(0, 0, 0) ;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    box-shadow: -2px 2px 2px rgba(48, 9, 18, 0.61);
+}
+.item:active {
+    cursor: grabbing;
+}
+
+.placeholder {
+    width: 150px;
+    height: 66px;
+}
+
+.start {
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    
+}
+  
+.progress {
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    
+}
+  
+.final {
+    background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+}
+
+.hide {
+    display: none;
+}
+
+.hold {
+    border: dashed 2px black;
+    box-shadow: none;
+}
+
+.hovered {
+    border-top: 4px solid rgb(30, 0, 139);
+    border: 3px solid purple;
+    border-radius: 20px;
+}
